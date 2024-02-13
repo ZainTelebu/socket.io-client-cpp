@@ -1,6 +1,12 @@
 ## iOS
 
-### Option 1: Create a static library
+### Option 1: Cocoapods
+
+```
+pod 'SocketIO-Client-CPP'
+```
+
+### Option 2: Create a static library
 
 1. Create a static library
 1. Copy the header files into xcode
@@ -20,7 +26,7 @@ libtool -static -o libUniversalDebug.a Debug-iphoneos/libsioclient.a Debug-iphon
 ```
 
 
-### Option 2: Manual integration
+### Option 3: Manual integration
 
 Use this [shell](https://gist.github.com/melode11/a90114a2abf009ca22ea) to download and build boost completely automattically. It installs boost to `<shell folder>/prefix`.
 
